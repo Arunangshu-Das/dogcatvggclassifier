@@ -1,13 +1,55 @@
 # Cat-Dog-Classification
 
-## How to Run
+This Flask application is designed for Cat-Dog Classification. It utilizes a pre-trained model to predict whether an input image contains a cat or a dog.
 
-1. conda create -n catdog python=3.7 -y
-2. conda activate catdog
-3. pip install -r requirements.txt
-4. python app.py
-5. open in browser: http://localhost:8080/
+## Installation
 
+1. Clone the repository:
+   ```
+   git clone https://github.com/Arunangshu-Das/dogcatvggclassifier.git
+   ```
+
+2. Install the required dependencies. It is recommended to set up a virtual environment before installing the dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+
+3. Download the pre-trained model weights and place them in the `prediction` directory.
+
+## Usage
+
+1. Start the Flask server by running the following command:
+   ```
+   python app.py
+   ```
+
+2. Access the application by opening your web browser and navigating to `http://localhost:8000`.
+
+## Endpoints
+
+### Home
+
+- **URL**: /
+- **Method**: GET
+- **Description**: Renders the index.html template, which serves as the home page for the application.
+
+### Predict
+
+- **URL**: /predict
+- **Method**: POST
+- **Description**: Accepts a JSON object containing the image data in base64 format. The image is then decoded, saved as "inputImage.jpg", and passed to the pre-trained model for prediction. The predicted result (cat or dog) is returned as a JSON response.
+
+## File Structure
+
+- `app.py`: The main Flask application file that handles routing and serves the web pages.
+- `index.html`: HTML template file for the home page.
+- `utils.py`: Contains utility functions, including the `decodeImage` function for decoding base64-encoded images.
+- `predict.py`: Contains the `DogCat` class, which uses a pre-trained model for cat-dog classification.
+
+## Notes
+
+- Make sure to have the required model weights in the `prediction` directory before running the application.
+- The application runs on `http://localhost:8000` by default. You can modify the host and port in the `app.run()` statement if needed.
 
 
 # AWS-CICD-Deployment-with-Github-Actions
