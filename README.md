@@ -1,4 +1,13 @@
-# Cat-Dog-Classification
+# Cat-Dog Classification using VGG16 Model
+
+This Flask application provides a Cat-Dog Classification service based on the VGG16 model. It allows users to submit an image and receive a prediction of whether the image contains a cat or a dog.
+
+## Prerequisites
+- Python 3.x
+- Flask
+- Flask-Cors
+- Keras
+- TensorFlow
 
 This Flask application is designed for Cat-Dog Classification. It utilizes a pre-trained model to predict whether an input image contains a cat or a dog.
 
@@ -50,6 +59,10 @@ This Flask application is designed for Cat-Dog Classification. It utilizes a pre
 
 - Make sure to have the required model weights in the `prediction` directory before running the application.
 - The application runs on `http://localhost:8000` by default. You can modify the host and port in the `app.run()` statement if needed.
+- This project utilizes the VGG16 model provided by the Keras library.
+
+## VGG Model 
+!(image)[https://neurohive.io/wp-content/uploads/2018/11/vgg16-1-e1542731207177.png]
 
 
 # AWS-CICD-Deployment-with-Github-Actions
