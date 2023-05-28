@@ -62,7 +62,7 @@ This Flask application is designed for Cat-Dog Classification. It utilizes a pre
 - This project utilizes the VGG16 model provided by the Keras library.
 
 ## VGG Model 
-!(image)[https://neurohive.io/wp-content/uploads/2018/11/vgg16-1-e1542731207177.png]
+![image](https://neurohive.io/wp-content/uploads/2018/11/vgg16-1-e1542731207177.png)
 
 
 # AWS-CICD-Deployment-with-Github-Actions
